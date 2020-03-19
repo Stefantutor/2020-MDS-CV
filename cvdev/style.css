@@ -1,0 +1,52 @@
+@font-face {
+    font-family:"GothamMedium";
+    src:url("fonts/GothamMedium.ttf") format("truetype");
+}
+@font-face {
+    font-family:"GothamBold";
+    src:url("fonts/Gotham-Bold.otf") format("truetype");
+}
+@font-face {
+    font-family:"GothamBook";
+    src:url("fonts/GothamBook.ttf") format("truetype");
+}
+#bogoss {
+    width: 30%;    
+}
+
+#bogoss:hover {
+    width: 50%;
+}
+
+h1 {
+    font-family: "GothamBold";
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "GothamMedium";
+    font-size: 30px;
+    margin-bottom:14px;
+}
+
+ul {
+    list-style-type : none;
+    font-family: "GothamBook";
+}
+body {
+    margin : 0 0 0 0;
+}
+.Gras {
+    font-family:"GothamBold";
+    margin-bottom: 1px;
+}
+.Grasplusgros {
+    font-family:"GothamBold";
+    font-size:18px;
+    margin-bottom: 1px;
+}
+
+#form li {line-height: 1.2em;
+    margin:0 0 1em 0;
+
+}
