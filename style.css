@@ -32,37 +32,56 @@
 }
 
 .Cubeopacite {
-    background-color: rgb(211, 214, 13);
+    font-family: "GothamBold";
+    font-size: x-large;
+    color: white;
+    background-color: rgba(211, 214, 13, 0.753);
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    opacity: 0.7;
+}
+
+#profil {
+    margin:8% 10% auto auto;
+}
+
+#Gcon {
+    
+    font-family: "GothamBold";
+}
+
+#coordo {
+    font-family: "GothamBook";
+    font-size: large;
 }
 
 .txtpres {
+    font-family: "GothamBook";
     background-color: rgb(211, 214, 13);
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    color: white;
+    font-size: large;
+    padding: 3%;
 }
-
 .Presentation {
     background-color: #fff;
 }
 
 .Presentation {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0em;
     grid-template-columns: 40% 3fr;
-    grid-template-rows: 3fr 1fr ;
+    grid-template-rows: 3fr 0.75fr ;
 }
 
 .content {
     background-color: #fff;
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0em;
     grid-template-columns: 40% 3fr;
     grid-template-rows:2fr 1fr 2fr 2fr;
     grid-template-areas: 
@@ -74,18 +93,27 @@
 
 
 .contact{
-    background-color : blue;
+    background-color : rgb(36, 36, 36);
     grid-area: contact;
+    padding-left: 5%;
+    color: #fff;
 }
 
 .Tformation{
-    background-color : blue;
+    background-color : rgb(214, 201, 14);
     grid-area: Tformation;
+    color:black;
+    font-family: "GothamBold";
+    font-size: large;
+    padding-right: 10%;
+    padding-top:5%;
+    padding-bottom: 5%;
 }
 
 .formation{
-    background-color : blue;
+    background-color : rgb(65, 65, 65);
     grid-area: formation;
+    color:white;
 }
 
 .centredinterets{
