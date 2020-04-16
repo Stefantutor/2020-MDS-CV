@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "GothamMedium";
+    src: url("fonts/GothamMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url("fonts/Gotham-Bold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url("fonts/GothamBook.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:600&display=swap');
+
+.photo {
+    background-color:;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.Prénom {
+    background-color: grey;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Cubeopacite {
+    background-color: rgb(211, 214, 13);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    opacity: 0.7;
+}
+
+.txtpres {
+    background-color: rgb(211, 214, 13);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.Presentation {
+    background-color: #fff;
+}
+
+.Presentation {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 40% 3fr;
+    grid-template-rows: 3fr 1fr ;
+}
+
+.content {
+    background-color: #fff;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 40% 3fr;
+    grid-template-rows:2fr 1fr 2fr 2fr;
+    grid-template-areas: 
+    "contact           experiences"
+    "Tformation        experiences" 
+    "formation         experiences" 
+    "centredinterets   skills";
+    }
+
+
+.contact{
+    background-color : blue;
+    grid-area: contact;
+}
+
+.Tformation{
+    background-color : blue;
+    grid-area: Tformation;
+}
+
+.formation{
+    background-color : blue;
+    grid-area: formation;
+}
+
+.centredinterets{
+    background-color : blue;
+    grid-area: centredinterets;
+}
+
+.skills{
+    background-color : blue;
+    grid-area: skills;
+}
+
+.experiences{
+    background-color : blue;
+    grid-area: experiences;
+}
+
+#bogoss {
+    width: 100%;
+    
+}
+
+.name {
+    font-family: 'Roboto Slab', serif;
+    /* font-size: 50px; */
+    font-weight: 700;
+    margin : 10% 0% 0% 50%;
+}
+
+h1 {
+    font-size: 5vw;
+}
+@media only screen and (min-width: 600px) {
+    .Presentation {
+        grid-template-columns: 30% auto;
+    }
+    .content {
+        grid-template-columns: 30% auto;
+    }
+    
+
+
+}
