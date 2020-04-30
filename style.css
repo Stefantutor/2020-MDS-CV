@@ -16,14 +16,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:600&display=swap');
 
 .photo {
-    background-color:;
+    
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.Prénom {
+.Prenom {
     background-color: grey;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -40,6 +40,7 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    text-align: right;
 }
 
 #profil {
@@ -79,11 +80,12 @@
 }
 
 .content {
+    list-style: height 1.3em;
     background-color: #fff;
     display: grid;
     grid-gap: 0em;
     grid-template-columns: 40% 3fr;
-    grid-template-rows:2fr 0.4fr 2fr 2fr;
+    grid-template-rows:2fr 1fr 2fr 2fr;
     grid-template-areas: 
     "contact           experiences"
     "Tformation        experiences" 
