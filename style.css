@@ -47,7 +47,7 @@
 }
 
 #Gcon {
-    
+    color: rgb(214, 201, 14);
     font-family: "GothamBold";
 }
 
@@ -83,7 +83,7 @@
     display: grid;
     grid-gap: 0em;
     grid-template-columns: 40% 3fr;
-    grid-template-rows:2fr 1fr 2fr 2fr;
+    grid-template-rows:2fr 0.4fr 2fr 2fr;
     grid-template-areas: 
     "contact           experiences"
     "Tformation        experiences" 
@@ -105,15 +105,17 @@
     color:black;
     font-family: "GothamBold";
     font-size: large;
-    padding-right: 10%;
+    padding-right: 5%;
     padding-top:5%;
-    padding-bottom: 5%;
+    text-align: right;
 }
 
 .formation{
     background-color : rgb(65, 65, 65);
     grid-area: formation;
     color:white;
+    padding-right: 5%;
+    text-align: right;
 }
 
 .centredinterets{
@@ -142,7 +144,12 @@
     font-weight: 700;
     margin : 10% 0% 0% 50%;
 }
-
+.fgras {
+    font-family: "GothamBold";
+}
+.fbook {
+    font-family: "GothamBook";
+}
 h1 {
     font-size: 5vw;
 }
