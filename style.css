@@ -1,168 +1,316 @@
 @font-face {
-    font-family: "GothamMedium";
-    src: url("fonts/GothamMedium.ttf") format("truetype");
+  font-family: "GothamMedium";
+  src: url("fonts/GothamMedium.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "GothamBold";
-    src: url("fonts/Gotham-Bold.otf") format("truetype");
+  font-family: "GothamBold";
+  src: url("fonts/Gotham-Bold.otf") format("truetype");
 }
 
 @font-face {
-    font-family: "GothamBook";
-    src: url("fonts/GothamBook.ttf") format("truetype");
+  font-family: "GothamBook";
+  src: url("fonts/GothamBook.ttf") format("truetype");
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:600&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
 .photo {
-    
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .Prenom {
-    background-color: grey;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+ 
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .Cubeopacite {
-    font-family: "GothamBold";
-    font-size: x-large;
-    color: white;
-    background-color: rgba(211, 214, 13, 0.753);
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    text-align: right;
+  font-family: "GothamBold";
+  font-size: x-large;
+  color: white;
+  background-color: rgba(214, 201, 14, 0.685);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: right;
 }
 
 #profil {
-    margin:8% 10% auto auto;
+  margin: 8% 10% auto auto;
 }
 
 #Gcon {
-    color: rgb(214, 201, 14);
-    font-family: "GothamBold";
+  color: rgb(214, 201, 14);
+  font-family: "GothamBold";
 }
 
 #coordo {
-    font-family: "GothamBook";
-    font-size: large;
+  font-family: "GothamBook";
 }
 
 .txtpres {
-    font-family: "GothamBook";
-    background-color: rgb(211, 214, 13);
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    color: white;
-    font-size: large;
-    padding: 3%;
-}
-.Presentation {
-    background-color: #fff;
+  font-family: "GothamBook";
+  background-color: rgb(214, 201, 14);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: white;
+  padding: 3%;
 }
 
+
 .Presentation {
-    display: grid;
-    grid-gap: 0em;
-    grid-template-columns: 40% 3fr;
-    grid-template-rows: 3fr 0.75fr ;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 3fr 0.75fr;
 }
 
 .content {
-    list-style: height 1.3em;
-    background-color: #fff;
-    display: grid;
-    grid-gap: 0em;
-    grid-template-columns: 40% 3fr;
-    grid-template-rows:2fr 1fr 2fr 2fr;
-    grid-template-areas: 
+  list-style: height 1.3em;
+  background-color: #fff;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-columns: 40% 3fr;
+  grid-template-rows: 1fr 0.2fr 1fr 1fr;
+  grid-template-areas:
     "contact           experiences"
-    "Tformation        experiences" 
-    "formation         experiences" 
+    "Tformation        experiences"
+    "formation         experiences"
     "centredinterets   skills";
-    }
-
-
-.contact{
-    background-color : rgb(36, 36, 36);
-    grid-area: contact;
-    padding-left: 5%;
-    color: #fff;
 }
 
-.Tformation{
-    background-color : rgb(214, 201, 14);
-    grid-area: Tformation;
-    color:black;
-    font-family: "GothamBold";
-    font-size: large;
-    padding-right: 5%;
-    padding-top:5%;
-    text-align: right;
+.contact {
+  background-color: rgb(36, 36, 36);
+  grid-area: contact;
+  padding-left: 5%;
+  color: #fff;
 }
 
-.formation{
-    background-color : rgb(65, 65, 65);
-    grid-area: formation;
-    color:white;
-    padding-right: 5%;
-    text-align: right;
+.Tformation {
+  background-color: rgb(214, 201, 14);
+  grid-area: Tformation;
+  color: black;
+  font-family: "GothamBold";
+  font-size: large;
+  padding-right: 5%;
+  padding-top: 5%;
+  text-align: right;
 }
 
-.centredinterets{
-    background-color : blue;
-    grid-area: centredinterets;
+.formation {
+  background-color: rgb(65, 65, 65);
+  grid-area: formation;
+  color: white;
+  padding-right: 5%;
+  text-align: right;
 }
 
-.skills{
-    background-color : blue;
-    grid-area: skills;
+.centredinterets {
+  background-color: rgb(36, 36, 36);
+  grid-area: centredinterets;
+  padding-left: 5%;
 }
 
-.experiences{
-    background-color : blue;
-    grid-area: experiences;
+.skills {
+ 
+  grid-area: skills;
+  padding: 0 5% 3% 5%;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr;
+}
+.Tskills {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-family: "GothamBold";
+}
+.skill1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.skill2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.skill3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.skill4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.skill5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.skill6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.skill7 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.skill8 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
 
+.experiences {
+ 
+  grid-area: experiences;
+  padding: 0 5% 0 5%;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr;
+}
+.Texp {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-family: "GothamBold";
+}
+.exp2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.Cexp2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.exp3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.Cexp3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.exp4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.Cexp4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.exp5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.Cexp5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
 #bogoss {
-    width: 100%;
-    
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.space {
+  margin-bottom: 5%;
+}
 .name {
-    font-family: 'Roboto Slab', serif;
-    /* font-size: 50px; */
-    font-weight: 700;
-    margin : 10% 0% 0% 50%;
+  font-family: "Roboto Slab", serif;
+  /* font-size: 50px; */
+  font-weight: 700;
+  margin: 10% 0% 0% 50%;
 }
 .fgras {
-    font-family: "GothamBold";
+  font-family: "GothamBold";
 }
 .fbook {
-    font-family: "GothamBook";
+  font-family: "GothamBook";
+}
+#TCI {
+  font-family: "GothamBold";
+  color: rgb(214, 201, 14);
+}
+#CI {
+  color: white;
+  font-family: "GothamBook";
+}
+.webd{
+
+margin:8% 0% 0% 50%;
+background-color:rgb(214, 201, 14) ;
+
 }
 h1 {
-    font-size: 5vw;
+  font-size: 5vw;
+}
+hr {
+  height: 2px;
+  background-color: black;
+}
+hr.fin {
+  height: 1px;
+  background-color: black;
 }
 @media only screen and (min-width: 600px) {
-    .Presentation {
-        grid-template-columns: 30% auto;
-    }
-    .content {
-        grid-template-columns: 30% auto;
-    }
-    
-
-
+  .Presentation {
+    grid-template-columns: 30% auto;
+  }
+  .content {
+    grid-template-columns: 30% auto;
+  }
 }
